@@ -7,7 +7,14 @@
 
 export function joinToString(array, separator) {
   // Your code goes here...
-
+  let hyphen = "";
+    for( let i = 0; i < array.length; i++){
+      hyphen += array[i];
+      if(i < array.length - 2){
+        hyphen += separator
+      }
+    }
+    return hyphen;
 }
 
 

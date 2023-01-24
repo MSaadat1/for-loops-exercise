@@ -5,6 +5,19 @@
 
 export function getAllWithdrawals(array) {
   // Your code goes here...
+let withdrawalSums = [];
+for (let i = 0; i < array.length; i++) {
+    let total = 0;
+    if(array[i].hasOwnProperty("withdrawals")){
+        for (let j = 0; j < array[i].withdrawals.length; j++) {
+            total += array[i].withdrawals[j];
+        }
+    }else{
+        total = 0;
+    }
+    withdrawalSums.push(total);
+}
+return withdrawalSums;
 
 }
 

@@ -7,7 +7,7 @@
 
 export function flatArrays(array) {
   // Your code goes here...
-
+  return [].concat(...array);
 }
 
 

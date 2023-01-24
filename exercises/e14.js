@@ -7,6 +7,15 @@
 
 export function getClientsWithWrongBalance(array) {
   // Your code goes here...
+  let wrongBalanceAccounts = [];
+    const threshold = 10000;
+    for (let i = 0; i < array.length; i++) {
+        if(array[i].balance < 0 || array[i].balance > threshold) {
+            wrongBalanceAccounts.push(array[i]);
+        }
+    }
+    return wrongBalanceAccounts;
+    
 
 }
 

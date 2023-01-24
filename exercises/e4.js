@@ -5,6 +5,12 @@
 
 export function findMinValueInArray(array) {
   // Your code goes here...
+  let min = array[array.length - 1];
+      for(let i = 0; i <= array.length; i++){
+        if (array[i] < min) min = array[i];
+      }
+
+  return min;
 
 }
 
