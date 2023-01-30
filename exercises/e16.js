@@ -7,7 +7,15 @@
 
 export function flatArrays(array) {
   // Your code goes here...
-  return [].concat(...array);
+  const totalArrays = [];
+  for(let i = 0; i < array.length; i++){
+    for(let j =0; j< array[i].length; j++){
+      totalArrays.push(array[i][j])
+    }
+    
+  }
+  return totalArrays
+ 
 }
 
 
